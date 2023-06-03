@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="components/script.js" defer></script>
+
+</head>
+<body>
+  <header class="d-flex justify-content-center align-items-center py-4">
+    <div class="container d-flex flex-wrap">
+      <div class="container-logo w-100 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0 267 267" xml:space="preserve" class=""><g><path d="M232.31 161.479a4.166 4.166 0 0 0 4.057-6.896c-8.335-8.85-22.556-21.523-43.09-30.848-2.704-1.245-5.537-2.404-8.456-3.52l-.028-.011c-22.472-8.406-41.467-8.598-51.46-8.598-9.992 0-28.987.192-51.459 8.598l-.01.003a129.04 129.04 0 0 0-8.478 3.53c-21.345 9.709-35.519 22.85-43.079 30.839a4.167 4.167 0 0 0 4.049 6.903c25.075-6.351 58.85-12.373 98.977-12.373s73.903 6.022 98.977 12.373zm-13.067-11.607a410.702 410.702 0 0 0-85.91-9.099 410.76 410.76 0 0 0-85.887 9.094c7.346-6.156 17.109-12.96 29.404-18.551l.017-.008a120.725 120.725 0 0 1 7.931-3.301c21.192-7.926 39.112-8.067 48.535-8.067s27.339.141 48.527 8.064c2.74 1.048 5.4 2.135 7.939 3.304a.39.39 0 0 1 .02.009c12.116 5.501 21.892 12.243 29.428 18.557z" data-original="#000000"></path><path d="M189.799 131.308a4.167 4.167 0 0 0 5.864-4.401l-9.335-62.427c-1.978-13.013-15.356-20.977-27.744-16.501l-20.955 7.624a12.64 12.64 0 0 1-8.591 0l-20.955-7.624c-12.389-4.476-25.766 3.488-27.744 16.501l-9.335 62.427a4.166 4.166 0 0 0 5.863 4.401 120.725 120.725 0 0 1 7.931-3.301c21.192-7.926 39.112-8.067 48.535-8.067s27.339.141 48.527 8.064c2.74 1.048 5.4 2.135 7.939 3.304zm-3.478-10.513-1.528-.591c-22.472-8.406-41.467-8.598-51.46-8.598-9.992 0-28.987.192-51.459 8.598l-1.528.585 8.232-55.058c1.19-7.819 9.227-12.603 16.671-9.915l20.966 7.628a20.935 20.935 0 0 0 14.236 0l20.967-7.628c7.443-2.688 15.481 2.096 16.671 9.915l8.234 55.065z" data-original="#000000"></path><path d="M81.352 98.881c10.928-3.748 31.047-8.108 51.981-8.108 11.554 0 32.181 1.318 51.982 8.108a4.168 4.168 0 0 0 5.293-2.59 4.17 4.17 0 0 0-2.59-5.293c-20.832-7.143-42.53-8.558-54.685-8.558-22.024 0-43.188 4.615-54.685 8.559a4.168 4.168 0 0 0-2.589 5.293 4.169 4.169 0 0 0 5.293 2.589zM116.667 190.773c0-16.097-13.069-29.167-29.167-29.167s-29.167 13.07-29.167 29.167c0 16.098 13.069 29.167 29.167 29.167s29.167-13.069 29.167-29.167zm-8.334 0c0 11.498-9.335 20.833-20.833 20.833s-20.833-9.335-20.833-20.833S76.002 169.94 87.5 169.94s20.833 9.335 20.833 20.833zM208.333 190.773c0-16.097-13.069-29.167-29.166-29.167-16.098 0-29.167 13.07-29.167 29.167 0 16.098 13.069 29.167 29.167 29.167 16.097 0 29.166-13.069 29.166-29.167zm-8.333 0c0 11.498-9.335 20.833-20.833 20.833-11.499 0-20.834-9.335-20.834-20.833s9.335-20.833 20.834-20.833c11.498 0 20.833 9.335 20.833 20.833z" data-original="#000000"></path><path d="M115.372 193.792c1.333-1.268 7.827-7.186 17.961-7.186 1.839 0 10.622.194 17.96 7.184 1.665 1.586 4.305 1.522 5.891-.143s1.522-4.305-.144-5.891c-9.686-9.227-21.279-9.483-23.707-9.483-13.374 0-21.946 7.808-23.705 9.482a4.168 4.168 0 0 0-.147 5.89 4.17 4.17 0 0 0 5.891.147z" data-original="#000000"></path></g></svg>
+        <h1 class="fs-5 text-white mb-4">Encrypt</h1>
+      </div>
+      <div class="container-encrypt w-100 d-flex justify-content-center">
+        <div>
+          <input
+          class="p-2 rounded mb-4 text-white shadow"
+          placeholder="Your message"
+          type="text"
+          id="message">
+          <button
+          class="fw-bold shadow"
+          onclick="encrypt()">Confirm</button>
+        </div>
+      </div>
+      <div class="container-message w-100 d-flex justify-content-center py-5">
+        <div class="message text-white"></div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

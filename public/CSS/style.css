@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600&family=Roboto+Mono:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace !important;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(38, 39, 42);
+}
+header svg {
+  fill: white;
+  width: 40px;
+  height: 40px;
+}
+header input {
+  width: 100%;
+  max-width: 400px;
+  border: 0;
+  outline: none;
+  background-color: #3e4242;
+}
+header button {
+  width: 100%;
+  max-width: 400px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 7px 0;
+  background-color: rgb(60, 64, 68);
+  color: white;
+}
+header button:hover {
+  background-color: rgb(76, 80, 84);
+}
+header .container-message .message {
+  border-radius: 5px;
+  background-color: rgb(76, 80, 84);
+  width: 100%;
+  max-width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(54, 59, 62);
+  border-radius: 10prgb 71, 75, 79;
+}
+
+/*# sourceMappingURL=style.css.map */

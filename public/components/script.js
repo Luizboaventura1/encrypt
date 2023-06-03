@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-
+/*
 let encryptedList = [
   {'a': process.env.CARACTER_1},
   {'b': process.env.CARACTER_2},
@@ -39,7 +39,8 @@ let encryptedList = [
   {'8': process.env.CARACTER_35},
   {'9': process.env.CARACTER_36}
 ];
-/*
+*/
+
 let encryptedList = {
   'a': "%",
   'b': "@",
@@ -78,7 +79,7 @@ let encryptedList = {
   '8': "¢",
   '9': "§"
 }
-*/
+
 function encrypt() {
   let messageUser = document.getElementById('message').value.replace(/\s/g, '')
   let messageContainer = document.querySelector('.message')
